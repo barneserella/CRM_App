@@ -1,6 +1,5 @@
 const axios = require('axios');
 
-
 exports.homeRoutes = (req,res)=>{
     // Make get request to api/users
     axios.get('http://localhost:8080/api/users')
@@ -12,6 +11,19 @@ exports.homeRoutes = (req,res)=>{
         })
     
 }
+
+// exports.homeRoutes = async (req,res)=>{
+//     try{
+//         const user = await axios.get('http:localhost:8080/api/users');
+//         res.render('index', {users: user});
+//     }
+//     catch(error){
+//         console.log(error);
+//         res.status(500).send(error)
+//     }
+// }
+
+
 
 exports.add_user = (req,res)=>{
     res.render('add_user');
