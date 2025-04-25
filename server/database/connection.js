@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-// const URI = "Not Today!";
+// const URI = "Not Today!!";
 // require('dotenv').config();
 
 const connectDB = async ()=> {

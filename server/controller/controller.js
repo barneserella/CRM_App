@@ -31,7 +31,7 @@ exports.create = (req,res)=>{
 
 }
 
-// retrive and return all users/single user
+// retrieve and return all users/single user
 exports.find = (req,res)=>{
     if(req.query.id){
         const id = req.query.id;
